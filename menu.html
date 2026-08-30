@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>FoodRush - Menu</title>
+
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link
+rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-dark food-navbar">
+
+<div class="container">
+
+<a
+class="navbar-brand food-logo"
+href="index.html">
+
+<i class="fa-solid fa-utensils"></i>
+
+Food<span>Rush</span>
+
+</a>
+
+<a
+href="cart.html"
+class="btn login-btn">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+Cart
+
+</a>
+
+</div>
+
+</nav>
+
+
+<section class="section-padding">
+
+<div class="container">
+
+<div class="mb-5">
+
+<p class="hero-small">
+SPICE HUB
+</p>
+
+<h1>
+Our Menu
+</h1>
+
+<p>
+Delicious food prepared fresh for you.
+</p>
+
+</div>
+
+
+<div class="row g-4">
+
+
+<!-- ITEM -->
+
+<div class="col-md-6 col-lg-4">
+
+<div class="food-card">
+
+<div class="food-image">
+
+<img
+src="burger.png"
+alt="Burger">
+
+</div>
+
+<div class="food-info">
+
+<h5>
+Classic Chicken Burger
+</h5>
+
+<p>
+Chicken patty, lettuce, tomato and cheese.
+</p>
+
+<div class="food-bottom">
+
+<strong>
+₹149
+</strong>
+
+<button
+class="add-cart"
+onclick="addToCart('Classic Chicken Burger',149)">
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-6 col-lg-4">
+
+<div class="food-card">
+
+<div class="food-image">
+
+<img
+src="pizza.png"
+alt="Pizza">
+
+</div>
+
+<div class="food-info">
+
+<h5>
+Cheese Burst Pizza
+</h5>
+
+<p>
+Cheesy pizza with fresh vegetables.
+</p>
+
+<div class="food-bottom">
+
+<strong>
+₹299
+</strong>
+
+<button
+class="add-cart"
+onclick="addToCart('Cheese Burst Pizza',299)">
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-6 col-lg-4">
+
+<div class="food-card">
+
+<div class="food-image">
+
+<img
+src="biriyani.png"
+alt="Biryani">
+
+</div>
+
+<div class="food-info">
+
+<h5>
+Chicken Biryani
+</h5>
+
+<p>
+Aromatic basmati rice with chicken.
+</p>
+
+<div class="food-bottom">
+
+<strong>
+₹229
+</strong>
+
+<button
+class="add-cart"
+onclick="addToCart('Chicken Biryani',229)">
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-6 col-lg-4">
+
+<div class="food-card">
+
+<div class="food-image">
+
+<img
+src="pasta.png"
+alt="Pasta">
+
+</div>
+
+<div class="food-info">
+
+<h5>
+Creamy White Pasta
+</h5>
+
+<p>
+Creamy pasta with herbs and vegetables.
+</p>
+
+<div class="food-bottom">
+
+<strong>
+₹189
+</strong>
+
+<button
+class="add-cart"
+onclick="addToCart('Creamy White Pasta',189)">
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>FoodRush - Menu</title>
+
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link
+rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-dark food-navbar">
+
+<div class="container">
+
+<a
+class="navbar-brand food-logo"
+href="index.html">
+
+<i class="fa-solid fa-utensils"></i>
+
+Food<span>Rush</span>
+
+</a>
+
+<a
+href="cart.html"
+class="btn login-btn">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+Cart
+
+</a>
+
+</div>
+
+</nav>
+
+
+<section class="section-padding">
+
+<div class="container">
+
+<div class="mb-5">
+
+<p class="hero-small">
+SPICE HUB
+</p>
+
+<h1>
+Our Menu
+</h1>
+
+<p>
+Delicious food prepared fresh for you.
+</p>
+
+</div>
+
+
+<div class="row g-4">
+
+
+<!-- ITEM -->
+
+<div class="col-md-6 col-lg-4">
+
+<div class="food-card">
+
+<div class="food-image">
+
+<img
+src="burger.png"
+alt="Burger">
+
+</div>
+
+<div class="food-info">
+
+<h5>
+Classic Chicken Burger
+</h5>
+
+<p>
+Chicken patty, lettuce, tomato and cheese.
+</p>
+
+<div class="food-bottom">
+
+<strong>
+₹149
+</strong>
+
+<button
+class="add-cart"
+onclick="addToCart('Classic Chicken Burger',149)">
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-6 col-lg-4">
+
+<div class="food-card">
+
+<div class="food-image">
+
+<img
+src="pizza.png"
+alt="Pizza">
+
+</div>
+
+<div class="food-info">
+
+<h5>
+Cheese Burst Pizza
+</h5>
+
+<p>
+Cheesy pizza with fresh vegetables.
+</p>
+
+<div class="food-bottom">
+
+<strong>
+₹299
+</strong>
+
+<button
+class="add-cart"
+onclick="addToCart('Cheese Burst Pizza',299)">
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-6 col-lg-4">
+
+<div class="food-card">
+
+<div class="food-image">
+
+<img
+src="biriyani.png"
+alt="Biryani">
+
+</div>
+
+<div class="food-info">
+
+<h5>
+Chicken Biryani
+</h5>
+
+<p>
+Aromatic basmati rice with chicken.
+</p>
+
+<div class="food-bottom">
+
+<strong>
+₹229
+</strong>
+
+<button
+class="add-cart"
+onclick="addToCart('Chicken Biryani',229)">
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-6 col-lg-4">
+
+<div class="food-card">
+
+<div class="food-image">
+
+<img
+src="pasta.png"
+alt="Pasta">
+
+</div>
+
+<div class="food-info">
+
+<h5>
+Creamy White Pasta
+</h5>
+
+<p>
+Creamy pasta with herbs and vegetables.
+</p>
+
+<div class="food-bottom">
+
+<strong>
+₹189
+</strong>
+
+<button
+class="add-cart"
+onclick="addToCart('Creamy White Pasta',189)">
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

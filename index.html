@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodRush - Online Food Ordering</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark food-navbar">
+
+    <div class="container">
+
+        <a class="navbar-brand food-logo" href="index.html">
+            <i class="fa-solid fa-utensils"></i>
+            Food<span>Rush</span>
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="restaurant.html">
+                        Restaurants
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="orders.html">
+                        Orders
+                    </a>
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link cart-link" href="cart.html">
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                        <span class="cart-count">
+                            0
+                        </span>
+
+                    </a>
+
+                </li>
+
+                <li class="nav-item ms-lg-3">
+
+                    <a
+                        class="btn login-btn"
+                        href="login.html">
+
+                        Login
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero-section">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <div class="hero-content">
+
+                    <p class="hero-small">
+                        FAST • FRESH • DELICIOUS
+                    </p>
+
+                    <h1>
+                        Your Favourite Food,
+                        <span>Delivered Fast.</span>
+                    </h1>
+
+                    <p class="hero-text">
+                        Discover delicious food from the best restaurants
+                        around you and get it delivered right to your door.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="restaurant.html"
+                            class="btn food-btn">
+
+                            Order Now
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                        <a
+                            href="#popular"
+                            class="btn explore-btn">
+
+                            Explore Food
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="hero-image">
+
+                    <img
+                        src="burger.png"
+                        alt="Delicious Burger">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SEARCH -->
+
+<section class="search-section">
+
+    <div class="container">
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <input
+                type="text"
+                placeholder="Enter your delivery location">
+
+            <button>
+                Find Food
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CATEGORIES -->
+
+<section class="section-padding">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p>
+                EXPLORE
+            </p>
+
+            <h2>
+                What are you craving?
+            </h2>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-6 col-md-3">
+
+                <div class="category-card">
+
+                    <div class="category-icon">
+                        🍔
+                    </div>
+
+                    <h5>
+                        Burgers
+                    </h5>
+
+                    <p>
+                        25+ Items
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-md-3">
+
+                <div class="category-card">
+
+                    <div class="category-icon">
+                        🍕
+                    </div>
+
+                    <h5>
+                        Pizza
+                    </h5>
+
+                    <p>
+                        30+ Items
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-md-3">
+
+                <div class="category-card">
+
+                    <div class="category-icon">
+                        🍛
+                    </div>
+
+                    <h5>
+                        Biryani
+                    </h5>
+
+                    <p>
+                        20+ Items
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-md-3">
+
+                <div class="category-card">
+
+                    <div class="category-icon">
+                        🍝
+                    </div>
+
+                    <h5>
+                        Pasta
+                    </h5>
+
+                    <p>
+                        15+ Items
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- POPULAR FOOD -->
+
+<section
+    class="section-padding popular-section"
+    id="popular">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p>
+                FOODRUSH PICKS
+            </p>
+
+            <h2>
+                Popular Food
+            </h2>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- BURGER -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="food-card">
+
+                    <div class="food-image">
+
+                        <img
+                            src="burger.png"
+                            alt="Classic Burger">
+
+                        <span class="food-badge">
+                            Popular
+                        </span>
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <h5>
+                            Classic Chicken Burger
+                        </h5>
+
+                        <p>
+                            Juicy chicken patty with fresh vegetables.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <strong>
+                                ₹149
+                            </strong>
+
+                            <button
+                                class="add-cart"
+                                onclick="addToCart('Classic Chicken Burger',149)">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PIZZA -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="food-card">
+
+                    <div class="food-image">
+
+                        <img
+                            src="pizza.png"
+                            alt="Pizza">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <h5>
+                            Cheese Burst Pizza
+                        </h5>
+
+                        <p>
+                            Loaded with cheese and fresh toppings.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <strong>
+                                ₹299
+                            </strong>
+
+                            <button
+                                class="add-cart"
+                                onclick="addToCart('Cheese Burst Pizza',299)">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BIRYANI -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="food-card">
+
+                    <div class="food-image">
+
+                        <img
+                            src="biriyani.png"
+                            alt="Biryani">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <h5>
+                            Chicken Biryani
+                        </h5>
+
+                        <p>
+                            Aromatic basmati rice with tender chicken.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <strong>
+                                ₹229
+                            </strong>
+
+                            <button
+                                class="add-cart"
+                                onclick="addToCart('Chicken Biryani',229)">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PASTA -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="food-card">
+
+                    <div class="food-image">
+
+                        <img
+                            src="pasta.png"
+                            alt="Pasta">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <h5>
+                            Creamy White Pasta
+                        </h5>
+
+                        <p>
+                            Creamy pasta with herbs and vegetables.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <strong>
+                                ₹189
+                            </strong>
+
+                            <button
+                                class="add-cart"
+                                onclick="addToCart('Creamy White Pasta',189)">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+
+<section class="how-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p>
+                SIMPLE PROCESS
+            </p>
+
+            <h2>
+                How FoodRush Works
+            </h2>
+
+        </div>
+
+
+        <div class="row g-4 text-center">
+
+            <div class="col-md-4">
+
+                <div class="step-card">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <i class="fa-solid fa-store"></i>
+
+                    <h4>
+                        Choose Restaurant
+                    </h4>
+
+                    <p>
+                        Browse restaurants and discover your favourite food.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="step-card">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    <h4>
+                        Place Your Order
+                    </h4>
+
+                    <p>
+                        Select your food and place your order easily.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="step-card">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <i class="fa-solid fa-motorcycle"></i>
+
+                    <h4>
+                        Get It Delivered
+                    </h4>
+
+                    <p>
+                        Track your order and enjoy fresh food at your door.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <div class="food-logo">
+                    <i class="fa-solid fa-utensils"></i>
+                    Food<span>Rush</span>
+                </div>
+
+                <p>
+                    Delicious food delivered fast to your doorstep.
+                </p>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <h5>
+                    Quick Links
+                </h5>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="restaurant.html">
+                    Restaurants
+                </a>
+
+                <a href="orders.html">
+                    Orders
+                </a>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <h5>
+                    Follow Us
+                </h5>
+
+                <div class="social-icons">
+
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <hr>
+
+        <p class="text-center mb-0">
+            © 2026 FoodRush. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
